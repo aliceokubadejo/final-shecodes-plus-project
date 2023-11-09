@@ -9,6 +9,7 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
+     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://kit.fontawesome.com/f3e677c2bc.js"></script>
     <title>Weather App</title>
   </head>
@@ -19,6 +20,7 @@
           <input
             type="text"
             class="span2 search-query"
+            id="search-input"
             autofocus="on"
             autocomplete="off"
             placeholder="Enter city here..."
@@ -29,21 +31,38 @@
           </button>
         </div>
       </form>
-      <h1 class="container" id="city"></h1>
-      <h2 class="container" id="temperature"></h2>
-      <span class="container" id="unit-conversion"></span>
-      <div class="cityResult" id="cityResult">
-        <h3 class="container" id="date-time"></h3>
+      <h1 class="container" id="city">Hello</h1>
+      <h2 class="container" id="temperature">World</h2>
+      <span class="container" id="unit-conversion">Welcome</span>
+   
+        <h3 class="container" id="date-time">Back</h3>
       </div>
-      <div>Monday</div>
-      <div>Tuesday</div>
-      <div>Wednesday</div>
-      <div>Thursday</div>
-      <div>Friday</div>
-      <div>Saturday</div>
-      <div>Sunday</div>
+      <div class="row">
+        <div class="col">Monday
+         <i class="fa-solid fa-cloud-sun-rain icon"></i>
+        </div>
+        <div class="col">Tuesday
+     <i class="fa-solid fa-cloud-sun-rain icon"></i>
+        </div>
+        <div class="col">Wednesday
+           <i class="fa-solid fa-cloud-sun-rain icon"></i>
+        </div>
+        <div class="col">Thursday
+            <i class="fa-solid fa-cloud-sun-rain icon"></i>
+        </div>
+        <div class="col">Friday
+            </br>  <i class="fa-solid fa-cloud-sun-rain icon"></i>
+        </div>
+        <div class="col">Saturday
+            <i class="fa-solid fa-cloud-sun-rain icon"></i>
+        </div>
+        <div class="col">Sunday
+             <i class="fa-solid fa-cloud-sun-rain icon"></i>
+        </div>
+      </div>
       <div>insert icons for github, instagram and Linkedin</div>
       <footer>Coded by Alice Okubadejo</footer>
     </div>
+      <script src="src/index.js"></script>
   </body>
 </html>
