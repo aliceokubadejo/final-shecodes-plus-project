@@ -14,22 +14,27 @@
   </head>
   <body>
     <div block>
-      <form class="form-search">
+      <form class="form-search" id="search-form">
         <div class="input-append">
           <input
             type="text"
             class="span2 search-query"
             autofocus="on"
             autocomplete="off"
-            placeholder="🔍 Type City Here..."
+            placeholder="Enter city here..."
           />
-          <button type="submit" class="btn">Search</button>
-          <button type="submit" class="btn">Current</button>
+          <button type="submit" class="btn" id="search-button">Search</button>
+          <button type="submit" class="btn" id="current-button">
+            Current Location
+          </button>
         </div>
       </form>
-      <h1>Name of City</h1>
-      <span>Temperature</span>
-      <div>unit conversion</div>
+      <h1 class="container" id="city"></h1>
+      <h2 class="container" id="temperature"></h2>
+      <span class="container" id="unit-conversion"></span>
+      <div class="cityResult" id="cityResult">
+        <h3 class="container" id="date-time"></h3>
+      </div>
       <div>Monday</div>
       <div>Tuesday</div>
       <div>Wednesday</div>
