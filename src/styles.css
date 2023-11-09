@@ -1,0 +1,29 @@
+body {
+  background-color: #fef6e4;
+   
+}
+* {
+font-family: "Manrope", sans-serif;#001858;
+}
+
+h1 h2{
+position: static;
+padding-bottom: 3.5rem;
+}
+
+.btn {
+  color: #001858;
+  background-color: #f582ae;
+}
+.fa-instagram {
+  background-color: transparent;
+  color: #f582ae;
+  font-size: 18px;
+  border: 2px;
+  text-decoration: none;
+}
+#search-input {
+  color: #232946;
+  position: static;
+  margin: 3.5rem;
+}
