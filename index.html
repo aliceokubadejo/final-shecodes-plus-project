@@ -9,16 +9,20 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
-      <link rel="stylesheet" href="src/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Courier+Prime&family=Comfortaa:wght@600&family=Inter&family=Manrope&display=swap" rel="stylesheet">
-     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="https://kit.fontawesome.com/f3e677c2bc.js"></script>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/f3e677c2bc.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Weather App</title>
   </head>
   <body>
-    <div block>
+    <div class="block">
       <form class="form-search" id="search-form">
         <div class="input-append">
           <input
@@ -27,7 +31,7 @@
             id="search-input"
             autofocus="on"
             autocomplete="off"
-            placeholder="Enter city here..."
+            placeholder="Enter city name here"
           />
           <button type="submit" class="btn" id="search-button">Search</button>
           <button type="submit" class="btn" id="current-button">
@@ -35,53 +39,70 @@
           </button>
         </div>
       </form>
-      <h1 class="container" id="city">Hello</h1>
-      <h2 class="container" id="temperature">World</h2>
-      <span class="container" id="unit-conversion">Welcome</span>
-   
-        <h3 class="container" id="date-time">Back</h3>
-      </div>
-      <div class="row">
-        <div class="col">Monday
-         <i class="fa-solid fa-cloud-sun-rain icon"></i>
-        </div>
-        <div class="col">Tuesday
-     <i class="fa-solid fa-cloud-sun-rain icon"></i>
-        </div>
-        <div class="col">Wednesday
-           <i class="fa-solid fa-cloud-sun-rain icon"></i>
-        </div>
-        <div class="col">Thursday
-            <i class="fa-solid fa-cloud-sun-rain icon"></i>
-        </div>
-        <div class="col">Friday
-            </br>  <i class="fa-solid fa-cloud-sun-rain icon"></i>
-        </div>
-        <div class="col">Saturday
-            <i class="fa-solid fa-cloud-sun-rain icon"></i>
-        </div>
-        <div class="col">Sunday
-             <i class="fa-solid fa-cloud-sun-rain icon"></i>
-        </div>
-      </div>
-      <div>
+      <h1 class="container" id="city"></h1>
+      <h2 class="container" id="temperature"></h2>
 
-            <a
-        href="https://www.linkedin.com/in/alice-okubadejo-428973274"
-        target="_blank"
-        class="fa fa-linkedin"
-        title="LinkedIn Profile"
-      ></a>
-
-      <a
-        href="https://instagram.com/aliceokubadejo?igshid=OGQ5ZDc2ODk2ZA=="
-        target="_blank"
-        title="Instagram Profile"
-        class="fa fa-instagram"
-      ></a>
+      <h3 class="container" id="date-time"></h3>
+      <div class="container" id="forecast-icon">
+        <div class="row">
+          <div class="col">
+            <span class="forecast">Sun</span>
+            <br />
+            <i class="fa-solid fa-cloud-sun-rain icon"></i>
+          </div>
+          <div class="col">
+            <span class="forecast">Mon</span>
+            <br />
+            <i class="fa-solid fa-cloud-sun-rain icon"></i>
+          </div>
+          <div class="col">
+            <span class="forecast">Tues</span>
+            <br />
+            <i class="fa-solid fa-cloud-sun-rain icon"></i>
+          </div>
+          <div class="col">
+            <span class="forecast">Wed</span>
+            <br />
+            <i class="fa-solid fa-cloud-sun-rain icon"></i>
+          </div>
+          <div class="col">
+            <span class="forecast">Thur</span>
+            <br />
+            <i class="fa-solid fa-cloud fa-xs"></i>
+          </div>
+          <div class="col">
+            <span class="forecast">Fri</span>
+            <br />
+            <i class="fa-solid fa-cloud-sun-rain icon"></i>
+          </div>
+          <div class="col">
+            <span class="forecast">Sat</span>
+            <br />
+            <i class="fa-solid fa-cloud-sun-rain icon"></i>
+          </div>
+        </div>
       </div>
-    <footer>Coded by Alice Okubadejo</footer>
+      <footer>
+        <p>
+          This project was coded by
+          <a href="https://github.com/aliceokubadejo" target="_blank"
+            >Alice Okubadejo</a
+          >
+          and is
+          <a
+            href="https://github.com/aliceokubadejo/weather-project.git"
+            target="_blank"
+          >
+            on GitHub</a
+          >
+          and
+          <a href="https://celadon-taiyaki-ed1f8c.netlify.app/" target="_blank"
+            >hosted on Netlify</a
+          >
+        </p>
+      </footer>
     </div>
-      <script src="src/index.js"></script>
+
+    <script src="src/index.js"></script>
   </body>
 </html>

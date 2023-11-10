@@ -1,29 +1,61 @@
+
+
 body {
-  background-color: #fef6e4;
-   
+padding: 10rem 20rem;
+background-color: #FAEEE7;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23ff8ba7' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23ffc6c7' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23fa8caa' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23ffccba' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23f68cad' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23f9d4b1' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23f18daf' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23ebdeb1' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23ec8eb1' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23d8e8b9' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23e78fb3' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23c3f0ca' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
 }
-* {
-font-family: "Manrope", sans-serif;#001858;
-}
+/*background by SVGbackgrounds.com*/
 
-h1 h2{
-position: static;
-padding-bottom: 3.5rem;
-}
 
-.btn {
-  color: #001858;
-  background-color: #f582ae;
-}
-.fa-instagram {
-  background-color: transparent;
-  color: #f582ae;
-  font-size: 18px;
-  border: 2px;
-  text-decoration: none;
-}
-#search-input {
-  color: #232946;
+h1 {
+ 
   position: static;
-  margin: 3.5rem;
+  padding-bottom: 1rem;
+  text-align: center;
+ 
 }
+h2 {
+  
+  position: static;
+  padding-bottom: 1rem;
+ text-align: center;
+}
+form{
+  margin: 30px;
+  padding-bottom: 1rem;
+}
+p{
+  margin: 30px;
+}
+.block {
+  background: #ff0000
+  padding: 3.5rem;
+  border: 3px solid rgb(57, 74, 109);
+  border-radius: 30px;
+  margin: 20px;
+  position: relative;
+.icon {
+  font-size: 50px;
+
+}
+
+.forecast{
+    display: block;
+    margin-bottom: 5px;
+}
+#forecast-icon {
+  font-size: 15px;
+  margin-bottom: 30px;
+  text-align: center;
+
+}
+#date-time {
+  display: block;
+  list-style-type: none;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
