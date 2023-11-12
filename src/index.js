@@ -1,7 +1,15 @@
 setInterval(formatDate, 0);
 function formatDate(date) {
   let now = new Date();
-  let days = ["Saturday", "Sunday", "Monday", "Tuesday", "Thursday", "Friday"];
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
   let currentDay = days[now.getDay()];
   let currentHour = now.getHours();
   if (currentHour < 10) {
@@ -15,7 +23,6 @@ function formatDate(date) {
 
   document.querySelector("#date-time").textContent = displayDate;
 }
-
 let searchSubmit = document.querySelector("#search-form");
 searchSubmit.addEventListener("submit", searchCity);
 function searchCity(event) {
@@ -31,12 +38,17 @@ function searchCity(event) {
 function showCurrentTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
   let tempheading = document.querySelector("h2");
-  tempheading.innerHTML = `${temperature}°C`;
   let cityName = response.data.name;
   let heading = document.querySelector("h1");
+  let humidity = response.data.main.temp.humidity;
+  let humidityElement = document.querySelector("#humidity");
+
   heading.innerHTML = `${cityName}`;
-  console.log(response.data);
+  tempheading.innerHTML = `${temperature}°C`;
+  humidityElement.innerHTML = `${humidity}`;
+  console.log(response);
 }
+
 function showPositions(positions) {
   let lat = positions.coords.latitude;
   let long = positions.coords.longitude;
@@ -53,3 +65,5 @@ function currentLocation(event) {
 
 let currentLocationButton = document.querySelector("#current-button");
 currentLocationButton.addEventListener("click", currentLocation);
+
+let forecast = document.querySelector("#forecast");

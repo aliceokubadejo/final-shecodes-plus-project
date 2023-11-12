@@ -43,10 +43,17 @@
           </button>
         </div>
       </form>
-      <h1 class="container" id="city"></h1>
-      <h2 class="container" id="temperature"></h2>
-
-      <h3 class="container" id="date-time"></h3>
+      <div>
+        <h1 class="container" id="city"></h1>
+        <h2 class="container" id="temperature"></h2>
+      </div>
+      <div class="weather-app-description">
+        <div id="date-time"></div>
+        <span>
+          Humidity: <strong id="humidity"></strong>, Wind:
+          <strong id="wind-speed"></strong
+        ></span>
+      </div>
       <div class="weather-forecast">
         <div class="row">
           <div class="col-2">
@@ -89,12 +96,15 @@
           title="LinkedIn Profile"
         ></a>
       </div>
-      <p>
+      <div class="footer-comment">
         Open-source code by
-        <a href="https://github.com/aliceokubadejo" target="_blank"
+        <a
+          href="https://github.com/aliceokubadejo"
+          target="_blank"
+          class="footer-link"
           >Alice Okubadejo</a
         >
-      </p>
+      </div>
     </footer>
 
     <script src="src/index.js"></script>
