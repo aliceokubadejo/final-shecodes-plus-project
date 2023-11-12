@@ -36,6 +36,9 @@ footer {
   font-family: monospace;
    color: aliceblue;
 }
+strong{
+  color: #d5a3d5;
+}
 
 .fa{
   display: inline
@@ -57,6 +60,7 @@ footer {
   margin: 1px;
   position: relative;
   color: aliceblue;
+  background-color: #232946;;
 }
 .icon {
   font-size: 50px;
