@@ -1,56 +1,91 @@
-
-
 body {
-padding: 10rem 20rem;
-background-color: #FAEEE7;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23ff8ba7' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23ffc6c7' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23fa8caa' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23ffccba' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23f68cad' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23f9d4b1' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23f18daf' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23ebdeb1' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23ec8eb1' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23d8e8b9' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23e78fb3' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23c3f0ca' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
-background-attachment: fixed;
-background-size: cover;
+  padding: 5rem 20rem;
+  position: absolute;
+  background-color: #232946;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23b8c1ec' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23eebbc3' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23c0b8e8' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23e2a4b7' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23caaee1' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23d48ead' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23d5a3d5' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23c37aa7' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23df99c6' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23af67a3' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23e78fb3' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%239656a1' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
 }
 /*background by SVGbackgrounds.com*/
 
-
+*{
+  font-family: 'Arimo', sans-serif
+}
 h1 {
- 
   position: static;
   padding-bottom: 1rem;
   text-align: center;
- 
 }
 h2 {
-  
   position: static;
   padding-bottom: 1rem;
- text-align: center;
+  text-align: center;
 }
-form{
+form {
   margin: 30px;
   padding-bottom: 1rem;
 }
-p{
-  margin: 30px;
+
+a{
+  text-decoration: none;
 }
+
+div {
+  background-color: transparent;
+}
+footer {
+  display: block;
+  text-align: center;
+  font-family: monospace;
+   color: aliceblue;
+}
+
+.fa{
+  display: inline
+  padding: 0.5rem;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  transition: all 150ms ease-in-out;
+  color: aliceblue;
+}
+
 .block {
-  background: #ff0000
-  padding: 3.5rem;
-  border: 3px solid rgb(57, 74, 109);
+  padding: 2rem;
+  border: 3px solid rgba(220, 220, 220, 0.404);
+  box-shadow: 1px;
   border-radius: 30px;
-  margin: 20px;
+  margin: 1px;
   position: relative;
+  color: aliceblue;
+}
 .icon {
   font-size: 50px;
-
 }
 
-.forecast{
-    display: block;
-    margin-bottom: 5px;
+.weather-forecast {
+ margin-top: 20px;
+ text-align: center;
 }
+.weather-forecast-date{
+  font-size: 16px;
+  color: #fff;
+  opacity: 0.5;
+}
+.weather-forecast-temperature{
+  font-size: 13px;
+  color: #fff;
+}
+.weather-forecast-temperature-min{
+  opacity: 0.5;
+}
+
 #forecast-icon {
   font-size: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 2px;
   text-align: center;
-
 }
 #date-time {
   display: block;
@@ -59,3 +94,9 @@ p{
   text-align: center;
 }
 
+#search-button {
+  color: aliceblue;
+}
+#current-button {
+  color: aliceblue;
+}

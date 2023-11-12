@@ -10,6 +10,10 @@
       crossorigin="anonymous"
     />
     <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Comfortaa:wght@600&family=Courier+Prime&family=Inter&family=Manrope:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       rel="stylesheet"
     />
@@ -43,65 +47,55 @@
       <h2 class="container" id="temperature"></h2>
 
       <h3 class="container" id="date-time"></h3>
-      <div class="container" id="forecast-icon">
+      <div class="weather-forecast">
         <div class="row">
-          <div class="col">
-            <span class="forecast">Sun</span>
-            <br />
-            <i class="fa-solid fa-cloud-sun-rain icon"></i>
-          </div>
-          <div class="col">
-            <span class="forecast">Mon</span>
-            <br />
-            <i class="fa-solid fa-cloud-sun-rain icon"></i>
-          </div>
-          <div class="col">
-            <span class="forecast">Tues</span>
-            <br />
-            <i class="fa-solid fa-cloud-sun-rain icon"></i>
-          </div>
-          <div class="col">
-            <span class="forecast">Wed</span>
-            <br />
-            <i class="fa-solid fa-cloud-sun-rain icon"></i>
-          </div>
-          <div class="col">
-            <span class="forecast">Thur</span>
-            <br />
-            <i class="fa-solid fa-cloud fa-xs"></i>
-          </div>
-          <div class="col">
-            <span class="forecast">Fri</span>
-            <br />
-            <i class="fa-solid fa-cloud-sun-rain icon"></i>
-          </div>
-          <div class="col">
-            <span class="forecast">Sat</span>
-            <br />
-            <i class="fa-solid fa-cloud-sun-rain icon"></i>
+          <div class="col-2">
+            <div class="weather-forecast-date">
+              Thu
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/3222/3222791.png"
+                alt=""
+                width="36"
+              />
+            </div>
+            <div class="weather-forecast-temperature">
+              <span class="weather-forecast-temperature-max">18</span>
+              <span class="weather-forecast-temperature-min">12</span>
+            </div>
           </div>
         </div>
       </div>
-      <footer>
-        <p>
-          This project was coded by
-          <a href="https://github.com/aliceokubadejo" target="_blank"
-            >Alice Okubadejo</a
-          >
-          and is
-          <a
-            href="https://github.com/aliceokubadejo/weather-project.git"
-            target="_blank"
-          >
-            on GitHub</a
-          >
-          and
-          <a href="https://celadon-taiyaki-ed1f8c.netlify.app/" target="_blank"
-            >hosted on Netlify</a
-          >
-        </p>
-      </footer>
     </div>
+
+    <footer>
+      <div class="socials">
+        <a
+          href="https://instagram.com/aliceokubadejo?igshid=OGQ5ZDc2ODk2ZA=="
+          target="_blank"
+          title="Instagram Profile"
+          class="fa fa-brands fa-instagram"
+        >
+        </a
+        ><a
+          href="https://github.com/aliceokubadejo"
+          target="_blank"
+          title="github profile"
+          class="fa fa-brands fa-github"
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/alice-okubadejo-428973274"
+          target="_blank"
+          class="fa fa-linkedin"
+          title="LinkedIn Profile"
+        ></a>
+      </div>
+      <p>
+        Open-source code by
+        <a href="https://github.com/aliceokubadejo" target="_blank"
+          >Alice Okubadejo</a
+        >
+      </p>
+    </footer>
 
     <script src="src/index.js"></script>
   </body>
