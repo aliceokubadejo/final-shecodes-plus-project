@@ -33,13 +33,11 @@ function searchCity(event) {
   let apiKey = "3c949ba49d38be2487ee278e0d2d4059";
   let apiCityUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityResult.value}&appid=${apiKey}&units=metric`;
   axios.get(apiCityUrl).then(showCurrentTemperature);
-  getForecast(response.data);
 }
 
 function showCurrentTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
   let tempheading = document.querySelector("h2");
-  let temperatureIconElement = response.data;
   let cityName = response.data.name;
   let heading = document.querySelector("h1");
   let humidity = response.data.main.humidity;
@@ -54,6 +52,8 @@ function showCurrentTemperature(response) {
   humidityElement.innerHTML = `${humidity}`;
   windSpeedElement.innerHTML = `${windSpeed}`;
   conditionsElement.innerHTML = `${conditions}`;
+  getForecast(response.data);
+  console.log(response);
 }
 
 function showPositions(positions) {
@@ -83,7 +83,7 @@ function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   let forecastDays = ["Tue", "Wed", "Thu", "Fri", "Sat"];
   let forecastHtml = "";
-  forecastDays.forEach(function (day) {
+  response.data.daily.forEach(function (day) {
     forecastHtml =
       forecastHtml +
       `
@@ -91,16 +91,21 @@ function displayForecast(response) {
         <div class="row">
           <div class="col">
             <div class="weather-forecast-date">
-              ${day}
+             Thu
               <img
-                src="https://cdn-icons-png.flaticon.com/512/3222/3222791.png"
+               class="weather-forecast-icon"
+                src="${day.condition.icon_url}"
                 alt=""
                 width="36"
               />
             </div>
             <div class="weather-forecast-temperature">
-              <span class="weather-forecast-temperature-max">18</span>
-              <span class="weather-forecast-temperature-min">12</span>
+              <span class="weather-forecast-temperature-max">${Math.round(
+                day.temperature.maximum
+              )}</span>
+              <span class="weather-forecast-temperature-min">${Math.round(
+                day.temperature.minimum
+              )}</span>
             </div>
           </div>
           </div>

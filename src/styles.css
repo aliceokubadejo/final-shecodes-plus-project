@@ -8,22 +8,25 @@ body {
 }
 /*background by SVGbackgrounds.com*/
 
-*{
-  font-family: 'Arimo', sans-serif
-}
+
 h1 {
   position: static;
   padding-bottom: 1rem;
   text-align: center;
+  font-weight:100;
+  font-family: 'Arimo', sans-serif;
 }
 h2 {
   position: static;
   padding-bottom: 1rem;
   text-align: center;
+  font-family: 'Arimo', sans-serif;
 }
 form {
   margin: 30px;
   padding-bottom: 1rem;
+  font-family: 'Arimo', sans-serif;
+  font-size: 12px;
 }
 
 
@@ -34,7 +37,8 @@ footer {
   display: block;
   text-align: center;
   font-family: monospace;
-   color: aliceblue;
+  color: aliceblue;
+  text-decoration: none;
 }
 strong{
   color: #d5a3d5;
@@ -106,7 +110,19 @@ strong{
 
 #search-button {
   color: aliceblue;
+  font-size: 12px;
 }
 #current-button {
   color: aliceblue;
+  font-size: 12px;
+}
+.weather-forecast-icon{
+  display: block;
+  margin: 0 auto;
+}
+.weather-forecast-temperature{
+  color: #d5a3d5;
+}
+.weather-forecast-temperature-max{
+  font-weight:bold;
 }
