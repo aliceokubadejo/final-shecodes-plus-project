@@ -21,6 +21,8 @@ h2 {
   padding-bottom: 1rem;
   text-align: center;
   font-family: 'Arimo', sans-serif;
+  color:#9656a1
+
 }
 form {
   margin: 30px;
@@ -41,7 +43,7 @@ footer {
   text-decoration: none;
 }
 strong{
-  color: #d5a3d5;
+  color:#9656a1
 }
 
 .fa{
@@ -61,10 +63,11 @@ strong{
   border: 3px solid rgba(220, 220, 220, 0.404);
   box-shadow: 1px;
   border-radius: 30px;
-  margin: 1px;
+  display: block;
+  margin: 0 auto;
   position: relative;
   color: aliceblue;
-  background-color: #232946;;
+  background-color: rgb(35, 41, 70,0.9)
 }
 .icon {
   font-size: 50px;
@@ -85,6 +88,7 @@ strong{
 }
 .weather-forecast-temperature-min{
   opacity: 0.5;
+  color: #d5a3d5;
 }
 
 .footer-comment{
@@ -121,7 +125,8 @@ strong{
   margin: 0 auto;
 }
 .weather-forecast-temperature{
-  color: #d5a3d5;
+    color:#9656a1
+
 }
 .weather-forecast-temperature-max{
   font-weight:bold;

@@ -13,7 +13,7 @@ function formatDate(date) {
   let currentDay = days[now.getDay()];
   let currentHour = now.getHours();
   if (currentHour < 10) {
-    currentHour = `0${hours}`;
+    currentHour = `0${currentHour}`;
   }
   let currentMin = now.getMinutes();
   if (currentMin < 10) {
@@ -30,11 +30,13 @@ function searchCity(event) {
   let cityResult = document.querySelector("#search-input");
   let cityHeading = document.querySelector("#city");
   cityHeading.innerHTML = [cityResult.value];
+  search(cityResult.value);
+}
+function search(city) {
   let apiKey = "3c949ba49d38be2487ee278e0d2d4059";
-  let apiCityUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityResult.value}&appid=${apiKey}&units=metric`;
+  let apiCityUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiCityUrl).then(showCurrentTemperature);
 }
-
 function showCurrentTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
   let tempheading = document.querySelector("h2");
@@ -82,24 +84,21 @@ function displayForecast(response) {
   console.log(response.data);
   let forecastElement = document.querySelector("#forecast");
   let forecastDays = ["Tue", "Wed", "Thu", "Fri", "Sat"];
-  let forecastHtml = "";
+  let forecastHtml = `<div class="container"><div class="row">`;
   response.data.daily.forEach(function (day) {
     forecastHtml =
       forecastHtml +
-      `
-           <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="weather-forecast-date">
-             Thu
-              <img
+      `<div class="col">
+        <div class="weather-forecast-date">
+           Thu
+           <img
                class="weather-forecast-icon"
                 src="${day.condition.icon_url}"
                 alt=""
                 width="36"
-              />
-            </div>
-            <div class="weather-forecast-temperature">
+           />
+        </div>
+        <div class="weather-forecast-temperature">
               <span class="weather-forecast-temperature-max">${Math.round(
                 day.temperature.maximum
               )}</span>
@@ -107,13 +106,9 @@ function displayForecast(response) {
                 day.temperature.minimum
               )}</span>
             </div>
-          </div>
-          </div>
-          </div>
-          </div>
-        `;
+        </div>`;
   });
-  forecastElement.innerHTML = forecastHtml;
+  forecastElement.innerHTML = forecastHtml + `</div></div>`;
 }
 
-displayForecast();
+search("London");
